@@ -67,7 +67,6 @@ pipeline {
       }
     }
     stage('Component test') {
-      when {
         anyOf {
           branch 'master'
           changeRequest()
